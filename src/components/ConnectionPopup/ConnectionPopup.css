@@ -1,0 +1,109 @@
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 500px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-title {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.modal-subtitle {
+    font-size: 16px;  
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #f97316;
+    outline: none;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background: #ccc;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+    background: #b3b3b3;
+}
+
+.connect-btn {
+    background: #f97316;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.connect-btn:hover {
+    background: #ea580c;
+}
+
+.connect-btn:disabled {
+    background: #fda87a;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
